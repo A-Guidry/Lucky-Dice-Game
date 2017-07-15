@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <title>Lucky Dice</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="row rules">
+            <div class="col-xs-2 col-md-2"></div>
+            <div class="col-xs-8 col-md-8">
+                <h3>The Rules</h3>
+                <h5>Each turn, a player rolls a dice as many times as they whishes and that score is totalled in the ROUND score.</h5>
+                <h5>If a player rolls a 1, the ROUND score is lost and it is the next players turn.</h5>
+                <h4>First player to 50 wins!</h4>
+            </div>
+            <div class="col-xs-2 col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1 col-md-1"></div>
+            <div class="wrapper">
+                <div class="buttons">
+                    <button id="rollTooltip" class="btn-roll" data-toggle="tooltip" data-placement="top" title="Click the dice to roll it"> <img src="img/dice-5.png" alt="Dice" class="dice">
+                    </button>
+                    <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+                    <button id="holdTooltip" class="btn-hold" data-toggle="tooltip" data-placement="bottom" title="Hold your score &amp; end your turn"><i class="ion-ios-download-outline"></i>Hold</button>
+                </div>
+
+                <div class="col-xs-5 col-md-5">
+                    <div class="player-0-panel active">
+                        <div class="player-name" id="name-0">Player 1</div>
+                        <div class="player-score" id="score-0">43</div>
+                        <div class="player-current-box">
+                            <div class="player-current-label">Round</div>
+                            <div class="player-current-score" id="current-0">11</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--            end player 1-->
+
+                <div class="col-xs-5 col-md-5">
+                    <div class="player-1-panel">
+                        <div class="player-name" id="name-1">Player 2</div>
+                        <div class="player-score" id="score-1">72</div>
+                        <div class="player-current-box">
+                            <div class="player-current-label">Round</div>
+                            <div class="player-current-score" id="current-1">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end playing board-->
+
+            <div class="col-xs-1 col-md-1"></div>
+
+        </div>
+        <!--End row-->
+    </div>
+    <!-- End Content -->
+
+
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
